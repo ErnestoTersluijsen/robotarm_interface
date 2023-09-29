@@ -1,0 +1,7 @@
+uint16 servoid
+int16 angle
+uint16 time
+---
+string response
+---
+uint16 progress
