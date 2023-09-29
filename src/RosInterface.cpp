@@ -158,7 +158,7 @@ void RosInterface::state_info(std::string state)
 {
     std::ostringstream oss;
     oss << "STATE:{" << state << "}";
-    RCLCPP_DEBUG(this->get_logger(), oss.str().c_str());
+    RCLCPP_INFO(this->get_logger(), oss.str().c_str());
 }
 
 void RosInterface::event_info(std::string event)
@@ -166,4 +166,5 @@ void RosInterface::event_info(std::string event)
     std::ostringstream oss;
     oss << "EVENT:{" << event << "}";
     RCLCPP_DEBUG(this->get_logger(), oss.str().c_str());
+    RCLCPP_INFO(this->get_logger(), oss.str().c_str());
 }
